@@ -1,0 +1,36 @@
+body {
+    background-color: darkolivegreen;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size:3rem;
+    color:lemonchiffon;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size:1.5rem;
+    color:lemonchiffon;
+}
+
+/* This targets the parent div the tiles are in and gives a grid view. Auto combined with max-content will center the tile container. 4 columns at 100px wide. Gap of 16px around the tiles */
+.tile-container {
+    margin: 48px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 16px;
+    background-color: darkslategrey;
+    border: 10px solid darkslategrey;
+}
+
+.tile {
+    height: 100px;
+    background-color: teal;
+    border: 5px solid darkgoldenrod;
+    cursor: pointer;
+}
